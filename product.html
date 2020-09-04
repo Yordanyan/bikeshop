@@ -16,7 +16,7 @@
 
     <title>Online Shop</title>
 </head>
-<body>
+<body class="bg-light">
 <div class="container main-header">
     <div class="row bg-light justify-content-between align-content-center py-2">
         <div class="d-inline ">
@@ -64,18 +64,17 @@
               </form>
 
             
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  My Account
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Login</a>
-                  <a class="dropdown-item" href="#">Register</a>
-                  <a class="dropdown-item" href="#">My Orders</a>
-                  <a class="dropdown-item" href="#">Account Settings</a>
-                </div>
-              </div>
+            <div class="btn-group dropdown col-4 col-lg-2 mt-2" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       My Account
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
+                        <a class="dropdown-item" href="myaccount.html">My Account</a>
+                        <a class="dropdown-item" href="myinfo.html">Account Settings</a>
+                      </div>
+                    </div>
           </nav>
 
           <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
@@ -214,7 +213,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <input class="btn btn-primary" type="submit" value="Add To Cart">
+                        <a class="btn btn-primary" href="buy.html">Add To Card</a>
                     </div>
                 </form>
                 <div class="row">
@@ -424,6 +423,82 @@
         </div>
 
     </div>
+     <!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        
+        
+<a  class="font-weight-bold text-uppercase mt-3 mb-4" href="https://www.w3schools.com">Home</a>
+       
+
+      </div>
+      <!-- Grid column -->
+                                                                                       
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+                                 
+        <a  class="font-weight-bold text-uppercase mt-3 mb-4" href="#">Contact Us</a>
+
+        
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <a  class="font-weight-bold text-uppercase mt-3 mb-4" href="#">About</a>
+
+        
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+       <a  class="font-weight-bold text-uppercase mt-3 mb-4" href="https://www.w3schools.com">PRIVACY POLICY</a>
+
+        
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://www.facebook.com/profile.php?id=100012424834365"> FIJI</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -440,5 +515,68 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!--  custom JS  -->
     <script type="text/javascript" src="js/script.js"></script>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #28b315">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-outline-dark">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+              
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #28b315">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                 <label for="formGroupExampleInput">Name</label>
+                   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+              </div>
+               <div class="form-group">
+                  <label for="formGroupExampleInput2">Last Name</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1 " placeholder="Email addres" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-outline-dark">Regist</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>

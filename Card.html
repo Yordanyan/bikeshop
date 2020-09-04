@@ -1,20 +1,13 @@
-<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--  Fancybox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <!-- FontAwesome JS -->
-    <script src="https://kit.fontawesome.com/2f158531bd.js" crossorigin="anonymous"></script>
-    <!-- css.gg -->
-    <link href='https://css.gg/css' rel='stylesheet'>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Online Shop</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+       <title>Online Shop</title>
 </head>
 <body class="bg-light">
 <div class="container main-header">
@@ -64,7 +57,8 @@
               </form>
 
             
-            <div class="btn-group dropdown col-4 col-lg-2 mt-2" role="group">
+            
+          <div class="btn-group dropdown col-4 col-lg-2 mt-2" role="group">
                       <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        My Account
                       </button>
@@ -85,10 +79,10 @@
               <ul class="navbar-nav mr-auto">
                <li>
                   <div class="dropdown" style="margin-left: 35px;">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="index.html" >
                       Home
                     </a>
-                   
+                    
                </div>
               </li>
 
@@ -106,7 +100,7 @@
             </li>
             <li>
               <div class="dropdown" style="margin-left: 35px;">
-                <a class="nav-link " href="shop.html">
+                <a class="nav-link" href="shop.html" >
                   Shop
                 </a>
                 
@@ -156,158 +150,63 @@
 
       </div>
     </div>
-<div class="container">
-    <nav aria-label="breadcrumb" class="row">
-        <ol class="breadcrumb mt-3 col mr-auto">
-            <li class="breadcrumb-item"><a href="shop.html">Bikes</a></li>
-            <li class="breadcrumb-item"><a href="shop.html">Mountain</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Low Price</li>
-        </ol>
-        <form action="" class="form-inline col-12 col-md-auto">
-            <label for="sortBy" class="mr-2">Sort By</label>
-            <select class="custom-select" id="sortBy">
-                <option value="1">Price: Low</option>
-                <option value="2">Price: High</option>
-                <option value="3">Rank</option>
-            </select>
-        </form>
-    </nav>
-    <div class="row border-top">
-        <div class="d-none d-md-block col-md-3 sidebar bg-light border-right border-left border-bottom">
-            <form>
-                <p>
-                    <a class="text-primary" data-toggle="collapse" href="#selectBrand1" role="button"
-                       aria-expanded="false" aria-controls="selectBrand1">
-                        Select Brand
-                    </a>
-                </p>
-                <div class="collapse bg-secondary p-2" id="selectBrand1">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="lenovo">
-                        <label class="custom-control-label" for="lenovo">GIANT</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="apple">
-                        <label class="custom-control-label" for="apple">SHIMANO</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="asus">
-                        <label class="custom-control-label" for="asus">MAXXIS</label>
-                    </div>
-                </div>
-                <p>
-                    <a class="text-primary" data-toggle="collapse" href="#selectCpu1" role="button"
-                       aria-expanded="false" aria-controls="selectCpu1">
-                       
-                        Select Size
-                    </a>
-                </p>
-                <div class="collapse bg-secondary p-2" id="selectSize1">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="14">
-                        <label class="custom-control-label" for="14">24"</label>
-                    </div>
+        <main>
+          <div class="mt-3 mb-3">
+              <div ><p class="text-success">Credit Card</p></div>
+              <div class="d-flex justify-content-start">
+                  <img src="http://www.emporium.themeseason.com/assets/images/others/card-icon.png" alt="">
                   
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="17">
-                        <label class="custom-control-label" for="17">26"</label>
-                    </div>
+              </div>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12 col-md-6">
+                    <label for="inputEmail4"></label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder= "Card holder name*">
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label for="inputPassword4"></label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder= "Card number*">
+                  </div>
                 </div>
-                <p>
-                    
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-4">
+                        <label for="inputState"></label>
+                        <select id="inputState" class="form-control" >
+                          <option selected>Month</option>
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-12 col-md-4">
+                        <label for="inputState"></label>
+                        <select id="inputState" class="form-control" >
+                          <option selected>Year</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                           <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                        </select>
+                      </div>
+                      <div class="form-group  col-12 col-md-4">
+                        <label for="inputPassword4"></label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder= "CVV*">
+                      </div>
                 </div>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="imgOnly">
-                    <label class="custom-control-label mr-5" for="imgOnly">With Images Only</label>
-                </div>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="freeImages">
-                    <label class="custom-control-label mr-5" for="freeImages">Free Shipping</label>
-                </div>
-                 <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="imgOnly">
-                    <label class="custom-control-label mr-5" for="imgOnly">Only 26"</label>
-                </div>
-                 <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="imgOnly">
-                    <label class="custom-control-label mr-5 " for="imgOnly">MOTO's</label>
-                </div>
-                 <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="imgOnly">
-                    <label class="custom-control-label mr-5 " for="imgOnly">BIKE's</label>
-                </div>
-            </form>
-        </div>
-        <div class="container mt-5">
-            
-<img src="https://cdn.worldvectorlogo.com/logos/shimano.svg" alt="#" class="rounded-circle border mr-5 " style="margin-left: 250px" width="175px" height="175px">
-<img src="https://i.pinimg.com/originals/fd/d3/c2/fdd3c24a25ee3a5d5a56e8bf1b43b9a0.jpg" width="175px" height="175px" alt="..." class="rounded-circle border mr-5">
-<img src="https://www.maxxis.co.uk/media/758309/new-profile-pic-white.jpg" width="175px" height="175px" alt="..." class="rounded-circle border mr-5">
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="card col-12 col-md-4 col-lg-4 col-xl-4  mt-5">
-  <img src="https://image.made-in-china.com/2f0j00RwkTiFZCkhum/Latest-Model-26-27-5-29-Inch-Aluminum-Alloy-Shimano-MTB-Bike-Mountain-Bicycle.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">SHIMANO BIKE</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="product.html" class="btn btn-primary">Buy</a>
-  </div>
-</div>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-outline-success" href="review.html" role="button">Review Order</a></td>
+                  </div>
+                    </form>
+          </div>
+                  
+                  
+        </main>
     
-         <div class="card col-12 col-md-4 col-lg-4 col-xl-4 mt-5">
-  <img src="https://biciclop.eu/media/catalog/product/cache/1/image/1500x/cdf220f4db6d91846b8e905f76f00335/b/i/bicicleta_giant_2000-revel-3_.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">GIANT REVELANT 3</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="product.html" class="btn btn-primary">Buy</a>
-  </div>
-</div>
-      <div class="card col-12 col-md-4 col-lg-4 col-xl-4 mt-5">
-  <img src="https://image.made-in-china.com/2f0j00ZLpGbwRqCukv/New-Design-700c-Carbon-Road-Bike-Shimano-Tiagra-4700-Set-20speed-Racing-Bike-OEM.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">SHIMANO SPORT BIKE</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="product.html" class="btn btn-primary">Buy</a>
-  </div>
-</div>
-  <div class="container">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTafvETLEI5OuMNjWY5oqrVz4921PTAHkDOpQ&usqp=CAU" alt="#" class="rounded-circle border mr-5  mt-5" style="margin-left: 250px" width="175px" height="175px">
-<img src="https://static1.squarespace.com/static/5b34dbcd5417fcc01fc06032/5b34e3bb6d2a7317ca1e915e/5b3ab9df758d46337dd5e4fa/1531252996503/BMW+LOGO.jpg?format=1500w" width="175px" height="175px" alt="..." class="rounded-circle border mr-5 mt-5">
-<img src="https://e7.pngegg.com/pngimages/390/925/png-clipart-suzuki-logo-art-suzuki-sx4-car-suzuki-jimny-logo-suzuki-angle-text.png" width="175px" height="175px" alt="..." class="rounded-circle border mr-5 mt-5">
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="card col-12 col-md-4 col-lg-4 col-xl-4  mt-5">
-  <img src="https://i.pinimg.com/originals/09/a9/24/09a9244c250065e082a3812937c89372.jpg" alt="product.html" height="250px">
-  <div class="card-body">
-    <h5 class="card-title">KAWASAKI NINJA</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="product.html" class="btn btn-primary">Buy</a>
-  </div>
-</div>
-    
-         <div class="card col-12 col-md-4 col-lg-4 col-xl-4 mt-5">
-  <img src="https://wemotorcom.s3-ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2013/03/BMW-F-800-GS-1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">GIANT REVELANT 3</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="product.html" class="btn btn-primary">Buy</a>
-  </div>
-</div>
-      <div class="card col-12 col-md-4 col-lg-4 col-xl-4 mt-5">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/81kEeV81nSL._AC_SL1500_.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">SHIMANO SPORT BIKE</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="product.html" class="btn btn-primary">Buy</a>
-  </div>
-</div>
-</div>
- <!-- Footer -->
+        
+     
+    <!-- Footer -->
 <footer class="page-footer font-small indigo">
 
   <!-- Footer Links -->
@@ -382,14 +281,16 @@
   <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      </div>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
       <div class="modal-dialog">
         <div class="modal-content" style="background-color: #28b315">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <div class="modal-header" >
+            <h5 class="modal-title" id="exampleModalLabel" >Login</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
@@ -411,13 +312,13 @@
     </div>
 
               
-    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content" style="background-color: #28b315">
+        <div class="modal-content"style="background-color: #28b315">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Register</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
@@ -446,22 +347,11 @@
       </div>
     </div>
 
-  
 
-
-
-        
-   
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>

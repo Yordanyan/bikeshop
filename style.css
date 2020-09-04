@@ -1,0 +1,27 @@
+.verev{
+	width: all;
+	height: 70px;
+	background-color: black;
+}
+.aj{
+	background-color: #ccc;
+display: inline-block;
+	height: 400px;
+	width:600px;
+	float: right;
+
+}
+.dzax{
+	background-color: #ccc;
+display: inline-block;
+	height: 400px;
+	width: 600px;
+	float: left;
+}
+.bar1{
+
+float: left;
+}
+.bar2{
+	float: right;
+}
